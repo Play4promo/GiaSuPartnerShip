@@ -1,6 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="StuHubPartnerShip.DashBoard">
     <ContentPage.Content>
-        <Label Text="This is a dashboard"/>
+        <ScrollView>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    <Button Text="I'm from the Top Left" BackgroundColor="Red" Grid.Column="0" Grid.Row="0"/>
+                    <Button Text="I'm from the Top Right" BackgroundColor="Black" Grid.Column="1" Grid.Row="0"/>
+                    <Button Text="I'm from the Bottom Left" BackgroundColor="Blue" Grid.Column="0" Grid.Row="1"/>
+                    <Button Text="I'm from the Bottom Right" BackgroundColor="Orange" Grid.Column="1" Grid.Row="1"/>
+                     <Button Text="I'm from the Top Right End" BackgroundColor="Purple" Grid.Column="2" Grid.Row="0"/>
+                </Grid>
+            </ScrollView>
     </ContentPage.Content>
 </ContentPage>
+ 

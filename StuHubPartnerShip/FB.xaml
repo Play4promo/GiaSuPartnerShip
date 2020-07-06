@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="StuHubPartnerShip.FB">
+    <ContentPage.Content>
+       
+        <StackLayout>
+             <ScrollView Orientation="Horizontal">
+                 <StackLayout Orientation="Horizontal">
+                        <BoxView BackgroundColor="Blue" Margin="10,20,0,0" WidthRequest="100" HorizontalOptions="Start"/>
+                        <BoxView BackgroundColor="AliceBlue" Margin="10,20,0,0" WidthRequest="100" HorizontalOptions="Start"/>
+                            <BoxView BackgroundColor="Blue" Margin="10,20,0,0" WidthRequest="100" HorizontalOptions="Start"/>
+                        <BoxView BackgroundColor="AliceBlue" Margin="10,20,0,0" WidthRequest="100" HorizontalOptions="Start"/>
+                            <BoxView BackgroundColor="Blue" Margin="10,20,0,0" WidthRequest="100" HorizontalOptions="Start"/>
+                        <BoxView BackgroundColor="AliceBlue" Margin="10,20,0,0" WidthRequest="100" HorizontalOptions="Start"/>
+                            <BoxView BackgroundColor="Blue" Margin="10,20,0,0" WidthRequest="100" HorizontalOptions="Start"/>
+                        <BoxView BackgroundColor="AliceBlue" Margin="10,20,0,0" WidthRequest="100" HorizontalOptions="Start"/>
+                            <BoxView BackgroundColor="Blue" Margin="10,20,0,0" WidthRequest="100" HorizontalOptions="Start"/>
+                        <BoxView BackgroundColor="AliceBlue" Margin="10,20,0,0" WidthRequest="100" HorizontalOptions="Start"/>
+                 </StackLayout>
+            </ScrollView>
+            <ListView x:Name="LV" ItemSelected="ListView_ItemSelected"
+                  Scrolled="LV_Scrolled">
+            </ListView>
+           <Button Text="Add Color" Clicked="Button_Clicked"/>
+         </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

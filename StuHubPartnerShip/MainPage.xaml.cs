@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -22,5 +23,10 @@ namespace StuHubPartnerShip
         {
             await Navigation.PushAsync(new DashBoard());
         }
+        async void FB_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new FB());
+        }
+        
     }
 }
