@@ -14,12 +14,14 @@ namespace StuHubPartnerShip
             InitializeComponent();
             list.Add("#C79AD7");
             list.Add("#CCEF5C");
+            list.Add("#FFFFFF");
+            list.Add("000000");
             LV.ItemsSource = list;
         }
 
         async void ListView_ItemSelected(System.Object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
         {
-            bool answer = await DisplayAlert("Question?", "Would you like to play a game " + e.SelectedItem.ToString(), "Yes", "No");
+            bool answer = await DisplayAlert("Question?", "Anh Quân Cute " + e.SelectedItem.ToString(), "Yes", "No");
             Debug.WriteLine("Answer: " + answer);
             if (answer == true)
             {

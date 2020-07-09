@@ -21,7 +21,7 @@ namespace StuHubPartnerShip
 
         async void SignIn_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new DashBoard());
+            await Navigation.PushAsync(new MenuPage());
         }
         async void FB_Clicked(System.Object sender, System.EventArgs e)
         {
